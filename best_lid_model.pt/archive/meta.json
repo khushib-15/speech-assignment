@@ -1,0 +1,21 @@
+{
+  "architecture": "MultiHeadLID",
+  "input_dim": 120,
+  "hidden_dim": 256,
+  "num_layers": 3,
+  "num_classes": 2,
+  "dropout": 0.3,
+  "best_val_f1": 0.9217,
+  "epochs_trained": 15,
+  "loss_weights": {
+    "frame": 0.7,
+    "segment": 0.3
+  },
+  "optimizer": "Adam",
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "scheduler": "CosineAnnealingLR",
+  "seed": 42,
+  "framework": "PyTorch",
+  "note": "Weights generated from MultiHeadLID trained on synthetic Hinglish LID dataset"
+}
